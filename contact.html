@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Website Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" class="ee"> <img src="eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.7541475788476!2d67.02711198018457!3d24.803870718034286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33da0eb6ea175%3A0x6c4a9b40795e2675!2sClifton%20Diamond!5e0!3m2!1sen!2s!4v1693866232940!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>
+                        <h5>XYZ road, ABC building</h5>
+                        <p>Karachi, Pakistan</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5>+92 321692128</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>info@Talhadev809.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name required">
+                    <input type="email" name="email" placeholder="Enter your email required">
+                    <input type="text" name="subject" placeholder="Enter your subject required">
+                    <textarea rows="7" name="Message" placeholder="Message required"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+            </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>"At our university, we're committed to academic excellence, innovation, and personal development. With a
+            proud history
+            of nurturing bright minds, we provide students with the tools they need to thrive. Our passionate faculty
+            and
+            cutting-edge resources ensure a dynamic learning environment, while our diverse and inclusive community
+            fosters
+            collaboration and growth. Join us at our university and embark on a transformative educational journey
+            towards a
+            brighter future."At our university, we're committed to academic excellence, innovation, and personal
+            development. With a proud history
+            of nurturing bright minds, we provide students with the tools they need to thrive. Our passionate faculty
+            and
+            cutting-edge resources ensure a dynamic learning environment, while our diverse and inclusive community
+            fosters
+            collaboration and growth. Join us at our university and embark on a transformative educational journey
+            towards a
+            brighter future.</p>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> Easy tutorials</p>
+    </section>
+
+
+    <!-- javaScript for toggle menu -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
